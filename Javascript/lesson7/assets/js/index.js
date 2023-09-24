@@ -2,6 +2,7 @@
 
 // 1.Function declarations
 
+// ES5
 function getName() {
   console.log("Salam");
 }
@@ -57,7 +58,7 @@ let myInfo = function () {
   console.log("Salam Nermin");
 };
 
-console.log(myInfo);
+myInfo();
 
 // 3. Arrow functions
 
@@ -69,6 +70,44 @@ const myFunction = () => {
 
 myFunction();
 
-const reqemlerinCemi = a => console.log(a);
+const reqemlerinCemi = (a) => console.log(a);
 
 reqemlerinCemi(12);
+
+// 4. IIFE function - Immediately Invoked Functions Expression
+
+// ES5 ile yazilis
+(function () {
+  console.log("This is IIFE function");
+})();
+
+// ES6 ile yazilis
+
+((name, job) => {
+  console.log(`My name is ${name} and my job is ${job}`);
+})("Esma", "Teacher");
+
+let number = 12;
+
+let message = ((value) => {
+  return `My number is ${value}`;
+})(number);
+
+let a = message;
+console.log(a);
+
+// 5. HOC functions - High Order Functions
+
+let function1 = function () {
+  console.log("Hello World");
+};
+
+let function2 = function (parametrFunction) {
+  parametrFunction();
+};
+
+function2(function1);
+
+// 6. Constructor functions
+// 7. Generator functions
+// 8. Callback functions
