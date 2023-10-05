@@ -174,24 +174,3 @@ let products = [
 // delete myArr[1]
 // console.log(myArr);
 
-// DOM
-
-// 1.Accessing elements
-
-// let myP = document.getElementsByTagName('p')
-// console.log(myP);
-
-// let myForm = document.getElementsByTagName('form')
-
-// let myBtn = document.getElementsByClassName('btn')
-// console.log(myBtn);
-
-
-// let myInput = document.getElementById('inp')
-
-
-// let myH = document.querySelector('.a')
-// let myH = document.querySelector('#b')
-// let myH = document.querySelector('h1')
-
-// let myElements = document.querySelectorAll('#b')
