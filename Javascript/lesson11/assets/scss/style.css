@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  height: 100vh;
+  background-color: blue;
+  width: 20%;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+
+.open-btn {
+  position: fixed;
+  right: 30px;
+  top: 30px;
+}
+
+.toggle-btn {
+  position: fixed;
+  right: 60px;
+  top: 60px;
+}/*# sourceMappingURL=style.css.map */
