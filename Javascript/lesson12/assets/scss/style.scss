@@ -1,0 +1,22 @@
+// root
+
+// mode
+
+.light {
+  --bgColor: rgb(109, 109, 135);
+  --textColor: black;
+}
+
+.dark {
+  --bgColor: rgb(42, 9, 9);
+  --textColor: white;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bgColor);
+  h1 {
+    color: var(--textColor);
+  }
+}
