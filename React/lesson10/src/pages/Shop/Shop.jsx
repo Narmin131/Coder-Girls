@@ -9,7 +9,7 @@ const Shop = () => {
   const { data } = useContext(GlobalState);
 
   const [state, setState] = useState(data);
-
+console.log(state);
   // Search
 
   const [query, setQuery] = useState("");
@@ -25,7 +25,7 @@ const Shop = () => {
   ];
 
   const filterForCategory = (myCategory) => {
-    if (myCategory == "all") {
+    if (myCategory === "all") {
       setState(data);
       return;
     }
@@ -111,9 +111,7 @@ const Shop = () => {
       <div className="container">
         <div className="row">
           {state
-            .filter((word) =>
-              word.title.toLowerCase().includes(query.toLowerCase())
-            )
+            .filter((word) =>word.title.toLowerCase().includes(query.toLowerCase()))
             .map((item, index) => {
               return <ShopCard shopProduct={item} key={item.id} />;
             })}
