@@ -3,15 +3,18 @@ import AppRouter from "./router/AppRouter";
 import { GlobalProvider } from "./Context/GlobalContext";
 import { ThemeContextProvider } from "./Context/ThemeContext";
 import { CartProvider } from "react-use-cart";
+import { WishlistProvider } from "react-use-wishlist";
 const App = () => {
   return (
     <>
       <CartProvider>
-        <ThemeContextProvider>
-          <GlobalProvider>
-            <AppRouter />
-          </GlobalProvider>
-        </ThemeContextProvider>
+        <WishlistProvider>
+          <ThemeContextProvider>
+            <GlobalProvider>
+              <AppRouter />
+            </GlobalProvider>
+          </ThemeContextProvider>
+        </WishlistProvider>
       </CartProvider>
     </>
   );

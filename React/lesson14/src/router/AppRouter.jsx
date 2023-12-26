@@ -16,6 +16,7 @@ import TopToBtn from "../components/TopToBtn";
 import TodosPage from "../pages/TodoPage/TodosPage";
 import Search from "../pages/Search/Search";
 import New from "../pages/New/New";
+import Wishlist from "../pages/Wishlist";
 const AppRouter = () => {
   const { darkMode } = useContext(GlobalThemeContext);
 
@@ -25,7 +26,7 @@ const AppRouter = () => {
         <BrowserRouter>
           <ToastContainer />
           <Header />
-          <TopToBtn/>
+          <TopToBtn />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -34,6 +35,7 @@ const AppRouter = () => {
             <Route path="/login" element={<Login />} />
             <Route path="/products" element={<ProductPage />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/wishlist" element={<Wishlist />} />
             <Route path="/todosPage" element={<TodosPage />} />
             <Route path="/searchPage" element={<Search />} />
             <Route path="/new" element={<New />} />

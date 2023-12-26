@@ -2,6 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import { NavLink } from "react-router-dom";
+import WishlistBtn from "./WishBtn";
 
 const ShopCard = ({shopProduct}) => {
   return (
@@ -16,6 +17,7 @@ const ShopCard = ({shopProduct}) => {
             <NavLink className="btn btn-primary" to={`/product/${shopProduct.id}`}>
               More info
             </NavLink>
+            <WishlistBtn klikEtdiyimMehsul={shopProduct}/>
           </Card.Body>
         </Card>
       </Col>

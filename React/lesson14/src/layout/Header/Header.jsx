@@ -13,9 +13,7 @@ const Header = () => {
   const changeMyLanguage = (lang) => {
     i18n.changeLanguage(lang);
   };
-
   const { t } = useTranslation();
-
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -69,6 +67,11 @@ const Header = () => {
               <li className="nav-item">
                 <NavLink className="nav-link" to="/cart">
                   Cart
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/wishlist">
+                  Wishlist
                 </NavLink>
               </li>
               <li className="nav-item">
