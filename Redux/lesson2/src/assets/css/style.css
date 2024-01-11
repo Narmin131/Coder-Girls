@@ -1,0 +1,10 @@
+body{
+    color: red;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.App{
+    width: 300px;
+    background-color: violet;
+    height: 100vh;
+}
